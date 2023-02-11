@@ -1,3 +1,5 @@
+#A function that adds to values together
+
 def add(a, b):
     return (a) + (b)
 
