@@ -60,7 +60,15 @@
 # square.shape()
 
 
-import datetime as dt
-mytime = dt.datetime.strptime('0130', '%H%M').time()
-mydatetime = dt.datetime.combine(dt.date.today(), mytime)
-print(mydatetime)
+# import datetime as dt
+# mytime = dt.datetime.strptime('0130', '%H%M').time()
+# mydatetime = dt.datetime.combine(dt.date.today(), mytime)
+# print(mydatetime)
+
+
+# def print_square(size):
+#     # print("\n".join("#" * size for i in range(size)))
+#     print(("#" * size + "\n") * size, end="")
+#     print("")
+
+# print_square(3)
