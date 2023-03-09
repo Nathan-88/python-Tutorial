@@ -10,8 +10,16 @@ flags: Optional flags that modify the behavior of the search. They are specified
 """
 import re
 
-string = 'The quick brown fox jumps over the lazy dog.'
-pattern = r'\b\w{5}\b'  # Find all words that are 5 letters long
+string = """The quick brown fox jumps over the lazy dog.
+333-445-7898
+6678-333-33
+hjk9hkjkl@yahoo.com
+corey-321-sho@my-work.uk
+onwukaebuka-278@gmail.com
+mr. scout
+Mr John
+"""
+pattern = r'[a-zA-Z0-9_-]+@[a-zA-Z-]+\.(com|edu|uk)'  # Find all words that are 5 letters long
 
 for match in re.finditer(pattern, string):
     print(
