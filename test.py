@@ -72,3 +72,14 @@
 #     print("")
 
 # print_square(3)
+
+"""
+regular expression for emails \b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b
+"""
+import re
+
+text = "This is my bag and i am five years old"
+pattern = re.compile(r".")
+matches = pattern.finditer(text)
+for match in matches:
+    print(match)
